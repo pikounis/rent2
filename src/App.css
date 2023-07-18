@@ -9,12 +9,13 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /*animation: App-logo-spin infinite 20s linear;*/
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  /*background-color: #282c34;*/
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.div-space {
+  margin-top: 5em;
+  margin-bottom: 3em;
 }
 
 .App-link {
@@ -35,4 +41,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+input {
+  font-size: 16px; /* Adjust the font size as needed */
+  touch-action: manipulation; /* Ensures touch events aren't interpreted as a pan or zoom gesture */
+  max-height: 100%; /* Prevents the input from expanding and causing overflow */
+  /* Disable auto zoom */
+  -ms-touch-action: manipulation; /* For Windows devices */
+  -webkit-user-select: none; /* Disable text selection on iOS */
+  -webkit-text-size-adjust: none; /* Disable text size adjustment on iOS */
+  touch-callout: none; /* Disable callout on iOS */
+  user-select: none; /* Disable text selection on Android */
+  -moz-user-select: none; /* Disable text selection on older Firefox versions */
 }
